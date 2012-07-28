@@ -1,3 +1,4 @@
+增加了可编辑webkit功能
 这里文件放入D:\Qt\4.8.2\src\3rdparty\webkit\Source\WebKit\qt\declarative源码中
 并且单独编译qt webkit模块
 编译方法如：
