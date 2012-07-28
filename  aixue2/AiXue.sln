@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WeiWeiClient", "WeiWeiClient\WeiWeiClient.vcproj", "{9BFDBB7F-BABE-3DD2-AA49-836E3674BCF8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "styleplugind", "WeiWeiClient\thirdparty\desktop\src\styleplugind.vcproj", "{2231DADE-3161-33B2-948F-F74D04D30490}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qmldesktopviewer", "WeiWeiClient\thirdparty\desktop\qmldesktopviewer\qmldesktopviewer.vcproj", "{85D2A140-9802-357E-9BD9-701F08CA701D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BFDBB7F-BABE-3DD2-AA49-836E3674BCF8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9BFDBB7F-BABE-3DD2-AA49-836E3674BCF8}.Debug|Win32.Build.0 = Debug|Win32
+		{9BFDBB7F-BABE-3DD2-AA49-836E3674BCF8}.Release|Win32.ActiveCfg = Release|Win32
+		{9BFDBB7F-BABE-3DD2-AA49-836E3674BCF8}.Release|Win32.Build.0 = Release|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Debug|Win32.Build.0 = Debug|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Release|Win32.ActiveCfg = Release|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Release|Win32.Build.0 = Release|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Debug|Win32.Build.0 = Debug|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Release|Win32.ActiveCfg = Release|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		QtVersion = 4.8.2
+	EndGlobalSection
+EndGlobal

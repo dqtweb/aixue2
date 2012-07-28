@@ -1,0 +1,58 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/Controls">
+        <file alias="CLButton.qml">thirdparty/colibri/CLButton.qml</file>
+        <file>thirdparty/colibri/CLCarousel.qml</file>
+        <file>thirdparty/colibri/CLCheckBox.qml</file>
+        <file>thirdparty/colibri/CLComboBox.qml</file>
+        <file>thirdparty/colibri/CLDatePicker.qml</file>
+        <file>thirdparty/colibri/CLDial.qml</file>
+        <file>thirdparty/colibri/CLHistogram.qml</file>
+        <file>thirdparty/colibri/CLKeyboard.qml</file>
+        <file>thirdparty/colibri/CLLayer.qml</file>
+        <file alias="CLLineEdit.qml">thirdparty/colibri/CLLineEdit.qml</file>
+        <file>thirdparty/colibri/CLListbox.qml</file>
+        <file>thirdparty/colibri/CLProgressBar.qml</file>
+        <file>thirdparty/colibri/CLRating.qml</file>
+        <file>thirdparty/colibri/CLScrollBar.qml</file>
+        <file>thirdparty/colibri/CLScrollBarVertical.qml</file>
+        <file>thirdparty/colibri/CLSlider.qml</file>
+        <file>thirdparty/colibri/CLSliderVertical.qml</file>
+        <file alias="CLStyle.qml">thirdparty/colibri/CLStyle.qml</file>
+        <file>thirdparty/colibri/CLTab.qml</file>
+        <file>thirdparty/colibri/CLTextArea.qml</file>
+        <file>thirdparty/colibri/includes/Fruits.qml</file>
+        <file>thirdparty/colibri/includes/HistogramColumn.qml</file>
+        <file>thirdparty/colibri/includes/KeyboardButton.qml</file>
+        <file>thirdparty/colibri/includes/RatingStar.qml</file>
+        <file>thirdparty/colibri/includes/Screen.qml</file>
+        <file>thirdparty/colibri/includes/TestCoverList.qml</file>
+        <file>thirdparty/colibri/includes/TestItemList.qml</file>
+        <file alias="RichTextBox.qml">views/RichTextBox.qml</file>
+    </qresource>
+    <qresource prefix="/Controls/javascripts">
+        <file>thirdparty/colibri/javascripts/date.js</file>
+        <file>thirdparty/colibri/javascripts/datepicker.js</file>
+        <file alias="functions.js">thirdparty/colibri/javascripts/functions.js</file>
+        <file>thirdparty/colibri/javascripts/histogram.js</file>
+        <file>thirdparty/colibri/javascripts/histogram2.js</file>
+        <file>thirdparty/colibri/javascripts/keyboard.js</file>
+    </qresource>
+    <qresource prefix="/Controls/gradients">
+        <file alias="Blue.qml">thirdparty/colibri/gradients/Blue.qml</file>
+        <file alias="Grey.qml">thirdparty/colibri/gradients/Grey.qml</file>
+        <file alias="LightBlue.qml">thirdparty/colibri/gradients/LightBlue.qml</file>
+        <file alias="Red.qml">thirdparty/colibri/gradients/Red.qml</file>
+    </qresource>
+    <qresource prefix="/View">
+        <file alias="LoginView">views/LoginView.qml</file>
+        <file alias="MainView">views/MainView.qml</file>
+        <file alias="ChatView">views/ChatView.qml</file>
+    </qresource>
+    <qresource prefix="/Images">
+        <file alias="login.jpg">images/g50.jpg</file>
+    </qresource>
+    <qresource prefix="/Controls/Behaviors">
+        <file>thirdparty/colibri/behaviors/ButtonBehavior.qml</file>
+    </qresource>
+</RCC>

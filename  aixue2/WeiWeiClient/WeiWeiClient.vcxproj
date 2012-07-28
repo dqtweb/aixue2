@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{906B8A93-3EA5-36A1-8A31-E0A7583F842A}</ProjectGuid>
+    <RootNamespace>WeiWeiClient</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>WeiWeiClient</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>WeiWeiClient</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(ConfigurationName)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WeiWeiClient</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(ConfigurationName)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WeiWeiClient</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtScript;$(QTDIR)\include\QtDeclarative;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;.\debug;$(QTDIR)\mkspecs\default;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_DECLARATIVE_LIB;QT_SCRIPT_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\QtDeclaratived4.lib;$(QTDIR)\lib\QtScriptd4.lib;$(QTDIR)\lib\QtGuid4.lib;$(QTDIR)\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\WeiWeiClient.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_DECLARATIVE_LIB;QT_SCRIPT_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtScript;$(QTDIR)\include\QtDeclarative;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;.\release;$(QTDIR)\mkspecs\default;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_DECLARATIVE_LIB;QT_SCRIPT_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;$(QTDIR)\lib\QtDeclarative4.lib;$(QTDIR)\lib\QtScript4.lib;$(QTDIR)\lib\QtGui4.lib;$(QTDIR)\lib\QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\WeiWeiClient.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_DECLARATIVE_LIB;QT_SCRIPT_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Controls.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="thirdparty\gloox\src\adhoc.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\amp.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\annotations.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\atomicrefcount.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\attention.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\base64.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\bookmarkstorage.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\capabilities.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\chatstate.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\chatstatefilter.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\client.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\clientbase.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\component.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\compressiondefault.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\compressionzlib.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectionbosh.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectionhttpproxy.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectionsocks5proxy.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectiontcpbase.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectiontcpclient.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectiontcpserver.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectiontls.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\connectiontlsserver.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\dataform.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\dataformfield.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\dataformfieldcontainer.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\dataformitem.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\dataformreported.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\delayeddelivery.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\disco.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\dns.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\error.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\eventdispatcher.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\featureneg.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\flexoff.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\gloox.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\gpgencrypted.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\gpgsigned.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\inbandbytestream.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\instantmucroom.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\iq.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\jid.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\lastactivity.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\logsink.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\md5.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\message.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\messageevent.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\messageeventfilter.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\messagefilter.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\messagesession.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\mucinvitationhandler.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\mucmessagesession.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\mucroom.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\mutex.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\nickname.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\nonsaslauth.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\oob.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\parser.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\prep.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\presence.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\privacyitem.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\privacymanager.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\privatexml.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\pubsubevent.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\pubsubitem.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\pubsubmanager.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\receipt.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\registration.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\rosteritem.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\rostermanager.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\search.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\sha.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\shim.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\simanager.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\siprofileft.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\socks5bytestream.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\socks5bytestreammanager.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\socks5bytestreamserver.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\softwareversion.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\stanza.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\stanzaextensionfactory.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\subscription.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tag.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsdefault.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsgnutlsbase.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsgnutlsclient.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsgnutlsclientanon.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsgnutlsserver.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsgnutlsserveranon.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsopensslbase.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsopensslclient.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsopensslserver.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\tlsschannel.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\uniquemucroom.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\util.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\vcard.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\vcardmanager.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\vcardupdate.cpp" />
+    <ClCompile Include="thirdparty\gloox\src\xhtmlim.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />
+    <ClInclude Include="thirdparty\gloox\src\adhoc.h" />
+    <ClInclude Include="thirdparty\gloox\src\adhoccommandprovider.h" />
+    <ClInclude Include="thirdparty\gloox\src\adhochandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\amp.h" />
+    <ClInclude Include="thirdparty\gloox\src\annotations.h" />
+    <ClInclude Include="thirdparty\gloox\src\annotationshandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\atomicrefcount.h" />
+    <ClInclude Include="thirdparty\gloox\src\attention.h" />
+    <ClInclude Include="thirdparty\gloox\src\base64.h" />
+    <ClInclude Include="thirdparty\gloox\src\bookmarkhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\bookmarkstorage.h" />
+    <ClInclude Include="thirdparty\gloox\src\bytestream.h" />
+    <ClInclude Include="thirdparty\gloox\src\bytestreamdatahandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\bytestreamhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\capabilities.h" />
+    <ClInclude Include="thirdparty\gloox\src\chatstate.h" />
+    <ClInclude Include="thirdparty\gloox\src\chatstatefilter.h" />
+    <ClInclude Include="thirdparty\gloox\src\chatstatehandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\client.h" />
+    <ClInclude Include="thirdparty\gloox\src\clientbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\component.h" />
+    <ClInclude Include="thirdparty\gloox\src\compressionbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\compressiondatahandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\compressiondefault.h" />
+    <ClInclude Include="thirdparty\gloox\src\compressionzlib.h" />
+    <ClInclude Include="thirdparty\gloox\src\config.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectionbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectionbosh.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectiondatahandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectionhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectionhttpproxy.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectionlistener.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectionsocks5proxy.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectiontcpbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectiontcpclient.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectiontcpserver.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectiontls.h" />
+    <ClInclude Include="thirdparty\gloox\src\connectiontlsserver.h" />
+    <ClInclude Include="thirdparty\gloox\src\dataform.h" />
+    <ClInclude Include="thirdparty\gloox\src\dataformfield.h" />
+    <ClInclude Include="thirdparty\gloox\src\dataformfieldcontainer.h" />
+    <ClInclude Include="thirdparty\gloox\src\dataformitem.h" />
+    <ClInclude Include="thirdparty\gloox\src\dataformreported.h" />
+    <ClInclude Include="thirdparty\gloox\src\delayeddelivery.h" />
+    <ClInclude Include="thirdparty\gloox\src\disco.h" />
+    <ClInclude Include="thirdparty\gloox\src\discohandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\disconodehandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\dns.h" />
+    <ClInclude Include="thirdparty\gloox\src\error.h" />
+    <ClInclude Include="thirdparty\gloox\src\event.h" />
+    <ClInclude Include="thirdparty\gloox\src\eventdispatcher.h" />
+    <ClInclude Include="thirdparty\gloox\src\eventhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\featureneg.h" />
+    <ClInclude Include="thirdparty\gloox\src\flexoff.h" />
+    <ClInclude Include="thirdparty\gloox\src\flexoffhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\gloox.h" />
+    <ClInclude Include="thirdparty\gloox\src\glooxversion.h" />
+    <ClInclude Include="thirdparty\gloox\src\gpgencrypted.h" />
+    <ClInclude Include="thirdparty\gloox\src\gpgsigned.h" />
+    <ClInclude Include="thirdparty\gloox\src\inbandbytestream.h" />
+    <ClInclude Include="thirdparty\gloox\src\instantmucroom.h" />
+    <ClInclude Include="thirdparty\gloox\src\iq.h" />
+    <ClInclude Include="thirdparty\gloox\src\iqhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\jid.h" />
+    <ClInclude Include="thirdparty\gloox\src\lastactivity.h" />
+    <ClInclude Include="thirdparty\gloox\src\lastactivityhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\loghandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\logsink.h" />
+    <ClInclude Include="thirdparty\gloox\src\macros.h" />
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT "-I." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtDeclarative" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I." "-I." "-I."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -DNDEBUG "-I." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtDeclarative" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\release" "-I." "-I$(QTDIR)\mkspecs\default" "-I." "-I." "-I."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="thirdparty\gloox\src\md5.h" />
+    <ClInclude Include="thirdparty\gloox\src\message.h" />
+    <ClInclude Include="thirdparty\gloox\src\messageevent.h" />
+    <ClInclude Include="thirdparty\gloox\src\messageeventfilter.h" />
+    <ClInclude Include="thirdparty\gloox\src\messageeventhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\messagefilter.h" />
+    <ClInclude Include="thirdparty\gloox\src\messagehandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\messagesession.h" />
+    <ClInclude Include="thirdparty\gloox\src\messagesessionhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\mucinvitationhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\mucmessagesession.h" />
+    <ClInclude Include="thirdparty\gloox\src\mucroom.h" />
+    <ClInclude Include="thirdparty\gloox\src\mucroomconfighandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\mucroomhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\mutex.h" />
+    <ClInclude Include="thirdparty\gloox\src\mutexguard.h" />
+    <ClInclude Include="thirdparty\gloox\src\nickname.h" />
+    <ClInclude Include="thirdparty\gloox\src\nonsaslauth.h" />
+    <ClInclude Include="thirdparty\gloox\src\oob.h" />
+    <ClInclude Include="thirdparty\gloox\src\parser.h" />
+    <ClInclude Include="thirdparty\gloox\src\prep.h" />
+    <ClInclude Include="thirdparty\gloox\src\presence.h" />
+    <ClInclude Include="thirdparty\gloox\src\presencehandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\privacyitem.h" />
+    <ClInclude Include="thirdparty\gloox\src\privacylisthandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\privacymanager.h" />
+    <ClInclude Include="thirdparty\gloox\src\privatexml.h" />
+    <ClInclude Include="thirdparty\gloox\src\privatexmlhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\pubsub.h" />
+    <ClInclude Include="thirdparty\gloox\src\pubsubevent.h" />
+    <ClInclude Include="thirdparty\gloox\src\pubsubitem.h" />
+    <ClInclude Include="thirdparty\gloox\src\pubsubmanager.h" />
+    <ClInclude Include="thirdparty\gloox\src\pubsubresulthandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\receipt.h" />
+    <ClInclude Include="thirdparty\gloox\src\registration.h" />
+    <ClInclude Include="thirdparty\gloox\src\registrationhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\resource.h" />
+    <ClInclude Include="thirdparty\gloox\src\rosteritem.h" />
+    <ClInclude Include="thirdparty\gloox\src\rosteritemdata.h" />
+    <ClInclude Include="thirdparty\gloox\src\rosterlistener.h" />
+    <ClInclude Include="thirdparty\gloox\src\rostermanager.h" />
+    <ClInclude Include="thirdparty\gloox\src\search.h" />
+    <ClInclude Include="thirdparty\gloox\src\searchhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\sha.h" />
+    <ClInclude Include="thirdparty\gloox\src\shim.h" />
+    <ClInclude Include="thirdparty\gloox\src\sihandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\simanager.h" />
+    <ClInclude Include="thirdparty\gloox\src\siprofileft.h" />
+    <ClInclude Include="thirdparty\gloox\src\siprofilefthandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\siprofilehandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\socks5bytestream.h" />
+    <ClInclude Include="thirdparty\gloox\src\socks5bytestreammanager.h" />
+    <ClInclude Include="thirdparty\gloox\src\socks5bytestreamserver.h" />
+    <ClInclude Include="thirdparty\gloox\src\softwareversion.h" />
+    <ClInclude Include="thirdparty\gloox\src\stanza.h" />
+    <ClInclude Include="thirdparty\gloox\src\stanzaextension.h" />
+    <ClInclude Include="thirdparty\gloox\src\stanzaextensionfactory.h" />
+    <ClInclude Include="thirdparty\gloox\src\statisticshandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\subscription.h" />
+    <ClInclude Include="thirdparty\gloox\src\subscriptionhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\tag.h" />
+    <ClInclude Include="thirdparty\gloox\src\taghandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsdefault.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsgnutlsbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsgnutlsclient.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsgnutlsclientanon.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsgnutlsserver.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsgnutlsserveranon.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlshandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsopensslbase.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsopensslclient.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsopensslserver.h" />
+    <ClInclude Include="thirdparty\gloox\src\tlsschannel.h" />
+    <ClInclude Include="thirdparty\gloox\src\uniquemucroom.h" />
+    <ClInclude Include="thirdparty\gloox\src\util.h" />
+    <ClInclude Include="thirdparty\gloox\src\vcard.h" />
+    <ClInclude Include="thirdparty\gloox\src\vcardhandler.h" />
+    <ClInclude Include="thirdparty\gloox\src\vcardmanager.h" />
+    <ClInclude Include="thirdparty\gloox\src\vcardupdate.h" />
+    <ClInclude Include="thirdparty\gloox\src\xhtmlim.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="thirdparty\desktop\components\ApplicationWindow.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\Button.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ButtonColumn.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ButtonRow.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\CheckBox.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ComboBox.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ContextMenu.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="Controls.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\thirdparty\desktop\components\ApplicationWindow.qml;.\thirdparty\desktop\components\Button.qml;.\thirdparty\desktop\components\ButtonColumn.qml;.\thirdparty\desktop\components\ButtonRow.qml;.\thirdparty\desktop\components\CheckBox.qml;.\thirdparty\desktop\components\ComboBox.qml;.\thirdparty\desktop\components\ContextMenu.qml;.\thirdparty\desktop\components\Dial.qml;.\thirdparty\desktop\components\Dialog.qml;.\thirdparty\desktop\components\Frame.qml;.\thirdparty\desktop\components\GroupBox.qml;.\thirdparty\desktop\components\Label.qml;.\thirdparty\desktop\components\MenuItem.qml;.\thirdparty\desktop\components\ProgressBar.qml;.\thirdparty\desktop\components\RadioButton.qml;.\thirdparty\desktop\components\ScrollArea.qml;.\thirdparty\desktop\components\ScrollBar.qml;.\thirdparty\desktop\components\Slider.qml;.\thirdparty\desktop\components\SpinBox.qml;.\thirdparty\desktop\components\SplitterColumn.qml;.\thirdparty\desktop\components\SplitterRow.qml;.\thirdparty\desktop\components\StatusBar.qml;.\thirdparty\desktop\components\Tab.qml;.\thirdparty\desktop\components\TabBar.qml;.\thirdparty\desktop\components\TabFrame.qml;.\thirdparty\desktop\components\TableColumn.qml;.\thirdparty\desktop\components\TableView.qml;.\thirdparty\desktop\components\TextArea.qml;.\thirdparty\desktop\components\TextField.qml;.\thirdparty\desktop\components\ToolBar.qml;.\thirdparty\desktop\components\ToolButton.qml;.\XmppClientModule\view\loginView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\thirdparty\desktop\components\ApplicationWindow.qml;.\thirdparty\desktop\components\Button.qml;.\thirdparty\desktop\components\ButtonColumn.qml;.\thirdparty\desktop\components\ButtonRow.qml;.\thirdparty\desktop\components\CheckBox.qml;.\thirdparty\desktop\components\ComboBox.qml;.\thirdparty\desktop\components\ContextMenu.qml;.\thirdparty\desktop\components\Dial.qml;.\thirdparty\desktop\components\Dialog.qml;.\thirdparty\desktop\components\Frame.qml;.\thirdparty\desktop\components\GroupBox.qml;.\thirdparty\desktop\components\Label.qml;.\thirdparty\desktop\components\MenuItem.qml;.\thirdparty\desktop\components\ProgressBar.qml;.\thirdparty\desktop\components\RadioButton.qml;.\thirdparty\desktop\components\ScrollArea.qml;.\thirdparty\desktop\components\ScrollBar.qml;.\thirdparty\desktop\components\Slider.qml;.\thirdparty\desktop\components\SpinBox.qml;.\thirdparty\desktop\components\SplitterColumn.qml;.\thirdparty\desktop\components\SplitterRow.qml;.\thirdparty\desktop\components\StatusBar.qml;.\thirdparty\desktop\components\Tab.qml;.\thirdparty\desktop\components\TabBar.qml;.\thirdparty\desktop\components\TabFrame.qml;.\thirdparty\desktop\components\TableColumn.qml;.\thirdparty\desktop\components\TableView.qml;.\thirdparty\desktop\components\TextArea.qml;.\thirdparty\desktop\components\TextField.qml;.\thirdparty\desktop\components\ToolBar.qml;.\thirdparty\desktop\components\ToolButton.qml;.\XmppClientModule\view\loginView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="thirdparty\desktop\components\Dial.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\Dialog.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\Frame.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\GroupBox.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\Label.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\MenuItem.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ProgressBar.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\RadioButton.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ScrollArea.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ScrollBar.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\Slider.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\SpinBox.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\SplitterColumn.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\SplitterRow.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\StatusBar.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\Tab.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\TabBar.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\TabFrame.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\TableColumn.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\TableView.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\TextArea.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\TextField.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ToolBar.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="thirdparty\desktop\components\ToolButton.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="XmppClientModule\view\loginView.qml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties QtVersion_x0020_Win32="4.8.1" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

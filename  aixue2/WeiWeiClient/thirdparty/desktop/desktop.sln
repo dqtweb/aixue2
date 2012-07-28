@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "styleplugind", "C:/Users/Administrator/Documents/AiXue/WeiWeiClient/thirdparty/desktop/src\styleplugind.vcproj", "{2231DADE-3161-33B2-948F-F74D04D30490}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qmldesktopviewer", "C:/Users/Administrator/Documents/AiXue/WeiWeiClient/thirdparty/desktop/qmldesktopviewer\qmldesktopviewer.vcproj", "{85D2A140-9802-357E-9BD9-701F08CA701D}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug|Win32
+		ConfigName.1 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Debug|Win32.Build.0 = Debug|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Release|Win32.ActiveCfg = Release|Win32
+		{2231DADE-3161-33B2-948F-F74D04D30490}.Release|Win32.Build.0 = Release|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Debug|Win32.Build.0 = Debug|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Release|Win32.ActiveCfg = Release|Win32
+		{85D2A140-9802-357E-9BD9-701F08CA701D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
