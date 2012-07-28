@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="desktop">
+</Property><Property Name="Solution File" Value="D:\Qt\opensoure\desktop\desktop.sln">
+</Property><Property Name="Date" Value="2012年6月12日">
+</Property><Property Name="Time" Value="23:09">
+</Property></Properties><Event ErrorLevel="2" Project="D:\Qt\opensoure\desktop\src\styleplugind.vcxproj" Source="styleplugind" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="styleplugind" Source="src\styleplugind.vcxproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="styleplugind" Source="src\styleplugind.vcxproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="D:\Qt\opensoure\desktop\qmldesktopviewer\qmldesktopviewer.vcxproj" Source="qmldesktopviewer" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="qmldesktopviewer" Source="qmldesktopviewer\qmldesktopviewer.vcxproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="qmldesktopviewer" Source="qmldesktopviewer\qmldesktopviewer.vcxproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="desktop.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="desktop.sln" Description="No Conversion Required">
+</Event></UpgradeLog>
