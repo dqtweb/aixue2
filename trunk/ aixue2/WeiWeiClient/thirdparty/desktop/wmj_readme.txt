@@ -1,0 +1,1 @@
+desktop编译后放入要把qml文件放入其他源代码中如：D:\Qt\4.8.2\imports\QtDesktop
