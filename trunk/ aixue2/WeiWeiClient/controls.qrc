@@ -48,6 +48,7 @@
         <file alias="LoginView">views/LoginView.qml</file>
         <file alias="MainView">views/MainView.qml</file>
         <file alias="ChatView">views/ChatView.qml</file>
+        <file alias="ChatHistroyView">views/ChatHistroyView.qml</file>
     </qresource>
     <qresource prefix="/Images">
         <file alias="login.jpg">images/g50.jpg</file>
