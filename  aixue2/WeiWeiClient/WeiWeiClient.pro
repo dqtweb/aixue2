@@ -52,7 +52,8 @@ OTHER_FILES += \
     views/RichTextBox.qml \
     views/MainView.qml \
     views/LoginView.qml \
-    views/ChatView.qml
+    views/ChatView.qml \
+    views/ChatHistroyView.qml
 
 RESOURCES += \
     controls.qrc
