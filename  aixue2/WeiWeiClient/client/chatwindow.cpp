@@ -12,7 +12,16 @@ ui(new Ui::ChatWindow)
 	chatView->rootContext()->setContextProperty("chatViewModel",chatViewModel);
 	chatView->setSource(QUrl("qrc:/View/ChatView"));
 	chatView->setResizeMode(QDeclarativeView::SizeRootObjectToView);
-	ui->verticalLayout->addWidget(chatView);
+
+	chatHistroyView=new QDeclarativeView();
+    chatHistroyView->rootContext()->setContextProperty("chatViewModel",chatViewModel);
+    chatHistroyView->setSource(QUrl("qrc:/View/ChatHistroyView"));
+    chatHistroyView->setResizeMode(QDeclarativeView::SizeRootObjectToView);
+    
+    QSplitter* splittel = new QSplitter(Qt::Vertical);
+	splittel->addWidget(chatView);
+    splittel->addWidget(chatHistroyView);
+	ui->verticalLayout->addWidget(splittel);
 	QVariant returnedValue;
 	QObject *item = qobject_cast<QObject*>(chatView->rootObject()); 
 	QObject *item1 = chatView->findChild<QObject *>("hello"); 

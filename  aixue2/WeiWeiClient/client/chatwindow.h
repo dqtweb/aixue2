@@ -18,6 +18,7 @@ public:
     ChatWindow(WWConn* conn,QWidget *parent = 0);
     ~ChatWindow();
     QDeclarativeView *chatView;
+    QDeclarativeView *chatHistroyView;
     Q_PROPERTY(QString jid READ jid WRITE setJid NOTIFY jidChanged)
     ChatViewModel *chatViewModel;
     WWConn* conn;
