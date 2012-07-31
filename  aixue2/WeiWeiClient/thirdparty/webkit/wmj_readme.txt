@@ -4,4 +4,5 @@
 编译方法如：
 configure.exe -webkit -nomake demos -nomake examples -nomake tools -fast -no-dsp  -no-declarative -no-scripttools  -no-directwrite  -no-declarative-debug -no-script -no-audio-backend -no-dbus  -no-phonon-backend  -no-multimedia  -no-audio-backend
 qmake WebKit.pro -r -spec  D:\Qt\4.8.2\mkspecs\win32-msvc2008 
-nmake
+经过上面两步
+现在在打开qt creator打开webkit.pro项目再编译declarative项目就没有问题了
