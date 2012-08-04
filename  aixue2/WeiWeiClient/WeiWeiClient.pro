@@ -23,7 +23,11 @@ SOURCES += main.cpp\
     model/mroster.cpp \
     viewmodel/mainviewmodel.cpp \
     client/chatwindow.cpp \
-    viewmodel/chatviewmodel.cpp
+    viewmodel/chatviewmodel.cpp \
+    client/messagesessionmanager.cpp \
+    client/wwacount.cpp \
+    client/wwglobal.cpp \
+    client/wwmessagesession.cpp
 
 HEADERS  += mainwindow.h \
     client/wwconn.h \
@@ -33,7 +37,11 @@ HEADERS  += mainwindow.h \
     model/mroster.h \
     viewmodel/mainviewmodel.h \
     client/chatwindow.h \
-    viewmodel/chatviewmodel.h
+    viewmodel/chatviewmodel.h \
+    client/messagesessionmanager.h \
+    client/wwacount.h \
+    client/wwglobal.h \
+    client/wwmessagesession.h
 
 FORMS    += mainwindow.ui \
     client/weiwei.ui \
