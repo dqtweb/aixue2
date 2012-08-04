@@ -65,6 +65,7 @@ void WWConn::doWork()
 
 	//delete j;
 }
+.
 
 void WWConn::onConnect()
 {
