@@ -5,14 +5,14 @@
 #include <QList>
 
 #include <messagesession.h>
-using std;
+using namespace std;
 using namespace gloox;
 class MessageSessionManager : public QObject
 {
     Q_OBJECT
 public:
     explicit MessageSessionManager(QObject *parent = 0);
-    virtual ~QObject();
+    virtual ~MessageSessionManager();
 signals:
     
 public slots:

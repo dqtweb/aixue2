@@ -5,7 +5,7 @@ MessageSessionManager::MessageSessionManager(QObject *parent) :
 {
     messageSessionList = new QList<MessageSession>();
 }
-MessageSessionManager::~QObject()
+MessageSessionManager::~MessageSessionManager()
 {
    //É¾³ımessagesession
    //delete messageSessionList

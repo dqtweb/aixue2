@@ -6,8 +6,8 @@
 #include <messagehandler.h>
 #include <messagesession.h>
 #include <chatstatehandler.h>
-using std;
-using gloox;
+using namespace std;
+using namespace gloox;
 
 class WWMessageSession : public QObject,MessageEventHandler, MessageHandler, ChatStateHandler
 {

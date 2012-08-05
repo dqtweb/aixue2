@@ -2,7 +2,7 @@
 #define WWACOUNT_H
 
 #include <QObject>
-#include <wwglobal.h>
+#include "wwglobal.h"
 
 class WWAcount : public QObject
 {
