@@ -1,7 +1,7 @@
 #ifndef WWGLOBAL_H
 #define WWGLOBAL_H
 
-static WWAcount s_WWACount=null;
+//static WWAcount s_WWACount;
 class WWGlobal
 {
 public:
