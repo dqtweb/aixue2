@@ -2,9 +2,10 @@
 #define MESSAGESESSIONMANAGER_H
 
 #include <QObject>
-#include <QList>
+#include <QMap>
 
 #include <messagesession.h>
+#include "wwmessagesession.h"
 using namespace std;
 using namespace gloox;
 class MessageSessionManager : public QObject
@@ -13,11 +14,13 @@ class MessageSessionManager : public QObject
 public:
     explicit MessageSessionManager(QObject *parent = 0);
     virtual ~MessageSessionManager();
+    void Add(MessageSession *messageSession);
 signals:
     
 public slots:
+
 private:
-    QList<MessageSession> *messageSessionList;
+    QMap<MessageSession*,WWMessageSession*> *messageSessionList_;
     
 };
 

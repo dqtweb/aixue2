@@ -14,11 +14,16 @@ class WWMessageSession : public QObject,MessageEventHandler, MessageHandler, Cha
     Q_OBJECT
 public:
     explicit WWMessageSession(QObject *parent = 0);
-    
+    WWMessageSession(MessageSession *messageSession,QObject *parent = 0);
+    virtual void handleMessage(const Message& msg, MessageSession * /*session*/ );
+    virtual void handleMessageEvent(const JID& from, MessageEventType event);
+    virtual void handleChatState(const JID& from, ChatStateType state);
 signals:
     
 public slots:
-    
+
+private:
+    MessageSession *messageSession_;
 };
 
 #endif // WWMESSAGESESSION_H
