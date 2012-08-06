@@ -26,7 +26,7 @@ void  WWConn::handleTag( Tag* tag )
 }
 void WWConn::handleMessageSession( MessageSession *session )
     {
-      printf( "got new session\n");
+      //printf( "got new session\n");
       // this example can handle only one session. so we get rid of the old session
       j->disposeMessageSession( m_session );
       m_session = session;
