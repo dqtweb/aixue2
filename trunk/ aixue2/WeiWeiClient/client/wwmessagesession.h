@@ -24,6 +24,8 @@ public slots:
 
 private:
     MessageSession *messageSession_;
+	MessageEventFilter *messageEventFilter_;
+    ChatStateFilter *chatStateFilter_;
 };
 
 #endif // WWMESSAGESESSION_H
