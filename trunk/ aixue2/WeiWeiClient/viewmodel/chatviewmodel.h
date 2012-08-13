@@ -2,7 +2,7 @@
 #define CHATVIEWMODEL_H
 
 #include <QObject>
-#include "client/wwconn.h"
+#include "access/xmpp/wwconn.h"
 #include <message.h>
 
 class ChatViewModel : public QObject

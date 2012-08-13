@@ -3,14 +3,13 @@
 
 #include <QObject>
 #include <QWidget>
-#include "model/mroster.h"
+#include "client/model/mroster.h"
 #include "client/chatwindow.h"
-#include "viewmodel/chatviewmodel.h"
+#include "client/viewmodel/chatviewmodel.h"
 
 class MainViewModel : public QObject
 {
     Q_OBJECT
-    
 public:
     Q_INVOKABLE void Click(int index);
     MainViewModel(QObject *parent = 0);
