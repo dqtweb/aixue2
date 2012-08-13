@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="qmldesktopviewer"
-	ProjectGUID="{85D2A140-9802-357E-9BD9-701F08CA701D}"
+	ProjectGUID="{95CE1748-3514-3475-A28B-A680D90A6159}"
 	Keyword="Qt4VSv1.0"
 	TargetFrameworkVersion="0"
 	>

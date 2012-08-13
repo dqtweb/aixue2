@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="styleplugind"
-	ProjectGUID="{2231DADE-3161-33B2-948F-F74D04D30490}"
+	ProjectGUID="{7C599E7D-07FD-3BB9-8D5A-BDAB18CFC236}"
 	Keyword="Qt4VSv1.0"
 	TargetFrameworkVersion="0"
 	>

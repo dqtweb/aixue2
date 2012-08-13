@@ -3,13 +3,14 @@
 
 #include <QWidget>
 #include <QtDeclarative>
-#include "wwconn.h"
+#include "access/xmpp/wwconn.h"
 #include "client/loginviewmodel.h"
 #include "viewmodel/mainviewmodel.h"
 namespace Ui {
 class Shell;
 }
 
+//
 class Shell : public QWidget
 {
     Q_OBJECT
@@ -27,7 +28,7 @@ private:
 private slots:
     void connectXmpp();
     void disconnectXmpp(ConnectionError e);
-    void tlsConnect( const CertInfo& info );
+    void tlsConnect(const CertInfo& info);
 	void rosters(QList<QString> *roster);
 };
 

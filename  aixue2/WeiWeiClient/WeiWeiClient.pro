@@ -16,32 +16,32 @@ include(src.pri)
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    client/wwconn.cpp \
+    access/xmpp/wwconn.cpp \
     client/weiwei.cpp \
     client/shell.cpp \
     client/loginviewmodel.cpp \
-    model/mroster.cpp \
-    viewmodel/mainviewmodel.cpp \
+    client/model/mroster.cpp \
+    client/viewmodel/mainviewmodel.cpp \
     client/chatwindow.cpp \
-    viewmodel/chatviewmodel.cpp \
-    client/messagesessionmanager.cpp \
+    client/viewmodel/chatviewmodel.cpp \
+    access/xmpp/messagesessionmanager.cpp \
     client/wwacount.cpp \
     client/wwglobal.cpp \
-    client/wwmessagesession.cpp
+    access/xmpp/wwmessagesession.cpp
 
 HEADERS  += mainwindow.h \
-    client/wwconn.h \
+    access/xmpp/wwconn.h \
     client/weiwei.h \
     client/shell.h \
     client/loginviewmodel.h \
-    model/mroster.h \
-    viewmodel/mainviewmodel.h \
+    client/model/mroster.h \
+    client/viewmodel/mainviewmodel.h \
     client/chatwindow.h \
-    viewmodel/chatviewmodel.h \
-    client/messagesessionmanager.h \
+    client/viewmodel/chatviewmodel.h \
+    access/xmpp/messagesessionmanager.h \
     client/wwacount.h \
     client/wwglobal.h \
-    client/wwmessagesession.h
+    access/xmpp/wwmessagesession.h
 
 FORMS    += mainwindow.ui \
     client/weiwei.ui \
