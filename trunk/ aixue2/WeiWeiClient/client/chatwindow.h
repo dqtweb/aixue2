@@ -3,8 +3,8 @@
 
 #include <QWidget>
 #include <QtDeclarative>
-#include <viewmodel/chatviewmodel.h>
-#include "client/wwconn.h"
+#include <client/viewmodel/chatviewmodel.h>
+#include "access/xmpp/wwconn.h"
 
 namespace Ui {
 class ChatWindow;

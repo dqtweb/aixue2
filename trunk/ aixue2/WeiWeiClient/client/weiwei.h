@@ -3,7 +3,7 @@
 
 #include <QtGui/QMainWindow>
 #include "ui_weiwei.h"
-#include "wwconn.h"
+#include "access/xmpp/wwconn.h"
 
 class WeiWei : public QMainWindow
 {

@@ -2,7 +2,7 @@
 #define LOGINVIEWMODEL_H
 
 #include <QObject>
-#include "WWConn.h"
+#include "access/xmpp/WWConn.h"
 
 class LoginViewModel : public QObject
 {
