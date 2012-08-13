@@ -4,9 +4,6 @@
 
 #include <QObject>
 
-
-
-
 class MRoster : public QObject
 {
     Q_OBJECT
