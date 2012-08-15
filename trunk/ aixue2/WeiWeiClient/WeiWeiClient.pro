@@ -57,11 +57,7 @@ OTHER_FILES += \
     MyQml/RichEditToolButton.qml \
     client/view/LoginView.qml \
     client/view/MainView.qml \
-    views/RichTextBox.qml \
-    views/MainView.qml \
-    views/LoginView.qml \
-    views/ChatView.qml \
-    views/ChatHistroyView.qml
+
 
 RESOURCES += \
     controls.qrc
