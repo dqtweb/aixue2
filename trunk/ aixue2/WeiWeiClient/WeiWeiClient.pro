@@ -66,4 +66,5 @@ OTHER_FILES += \
 RESOURCES += \
     controls.qrc
 
-INCLUDEPATH +=thirdparty/gloox/src
+INCLUDEPATH +=thirdparty/gloox/src \
+    thirdparty/Theron/include
