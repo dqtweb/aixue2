@@ -28,7 +28,7 @@
         <file>thirdparty/colibri/includes/Screen.qml</file>
         <file>thirdparty/colibri/includes/TestCoverList.qml</file>
         <file>thirdparty/colibri/includes/TestItemList.qml</file>
-        <file alias="RichTextBox.qml">views/RichTextBox.qml</file>
+        <file alias="RichTextBox.qml">client/views/RichTextBox.qml</file>
     </qresource>
     <qresource prefix="/Controls/javascripts">
         <file>thirdparty/colibri/javascripts/date.js</file>
@@ -45,10 +45,10 @@
         <file alias="Red.qml">thirdparty/colibri/gradients/Red.qml</file>
     </qresource>
     <qresource prefix="/View">
-        <file alias="LoginView">views/LoginView.qml</file>
-        <file alias="MainView">views/MainView.qml</file>
-        <file alias="ChatView">views/ChatView.qml</file>
-        <file alias="ChatHistroyView">views/ChatHistroyView.qml</file>
+        <file alias="LoginView">client/views/LoginView.qml</file>
+        <file alias="MainView">client/views/MainView.qml</file>
+        <file alias="ChatView">client/views/ChatView.qml</file>
+        <file alias="ChatHistroyView">client/views/ChatHistroyView.qml</file>
     </qresource>
     <qresource prefix="/Images">
         <file alias="login.jpg">images/g50.jpg</file>
