@@ -46,17 +46,62 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{8a690509-f489-404d-8a4e-5354b76dace2}</UniqueIdentifier>
+      <UniqueIdentifier>{ad1bfc70-2146-4a71-8bd4-b9e57a0d935a}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{250f53b7-6dc6-43dc-87ec-cb043bd4cd8d}</UniqueIdentifier>
+      <UniqueIdentifier>{803d37ec-3e47-4152-b9c3-18d64edc0f6e}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="thirdparty\Theron\Source\Actor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ActorCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ActorCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ActorDestroyer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ActorDirectory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ActorRef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\Address.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\AllocatorManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\Directory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\Framework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\MessageSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\Receiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ReceiverDirectory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ThreadCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\Theron\Source\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\adhoc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -85,6 +130,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\chatstatefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\viewmodel\chatviewmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\chatwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\client.cpp">
@@ -186,10 +237,16 @@
     <ClCompile Include="thirdparty\gloox\src\lastactivity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="client\loginviewmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\logsink.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\viewmodel\mainviewmodel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mainwindow.cpp">
@@ -211,6 +268,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\messagesession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="access\xmpp\messagesessionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\model\mroster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\mucinvitationhandler.cpp">
@@ -277,6 +340,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\sha.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\shell.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\shim.cpp">
@@ -357,8 +423,35 @@
     <ClCompile Include="thirdparty\gloox\src\vcardupdate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="client\weiwei.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\wwacount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="access\xmpp\wwconn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\wwglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="access\xmpp\wwmessagesession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="thirdparty\gloox\src\xhtmlim.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_chatwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_chatwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_loginviewmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_loginviewmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="Debug\moc_mainwindow.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -366,11 +459,50 @@
     <ClCompile Include="Release\moc_mainwindow.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_Controls.cpp">
+    <ClCompile Include="Debug\moc_messagesessionmanager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_messagesessionmanager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_shell.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_shell.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_weiwei.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_weiwei.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_wwacount.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_wwacount.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_wwconn.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_wwconn.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_wwmessagesession.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_wwmessagesession.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_controls.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="thirdparty\Theron\Source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="thirdparty\gloox\src\adhoc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -425,6 +557,12 @@
     <ClInclude Include="thirdparty\gloox\src\chatstatehandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="client\viewmodel\chatviewmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="client\chatwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <ClInclude Include="thirdparty\gloox\src\client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -572,10 +710,16 @@
     <ClInclude Include="thirdparty\gloox\src\loghandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <CustomBuild Include="client\loginviewmodel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <ClInclude Include="thirdparty\gloox\src\logsink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="thirdparty\gloox\src\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\viewmodel\mainviewmodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <CustomBuild Include="mainwindow.h">
@@ -606,6 +750,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="thirdparty\gloox\src\messagesessionhandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="access\xmpp\messagesessionmanager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="client\model\mroster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="thirdparty\gloox\src\mucinvitationhandler.h">
@@ -713,6 +863,9 @@
     <ClInclude Include="thirdparty\gloox\src\sha.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <CustomBuild Include="client\shell.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <ClInclude Include="thirdparty\gloox\src\shim.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -821,116 +974,185 @@
     <ClInclude Include="thirdparty\gloox\src\vcardupdate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <CustomBuild Include="client\weiwei.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client\wwacount.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="access\xmpp\wwconn.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="client\wwglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="access\xmpp\wwmessagesession.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <ClInclude Include="thirdparty\gloox\src\xhtmlim.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_chatwindow.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_mainwindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_shell.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_weiwei.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="client\chatwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client\shell.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client\weiwei.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="thirdparty\desktop\components\ApplicationWindow.qml">
+    <None Include="thirdparty\colibri\gradients\Blue.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\Button.qml">
+    <None Include="thirdparty\colibri\behaviors\ButtonBehavior.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\ButtonColumn.qml">
+    <None Include="thirdparty\colibri\CLButton.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\ButtonRow.qml">
+    <None Include="thirdparty\colibri\CLCarousel.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\CheckBox.qml">
+    <None Include="thirdparty\colibri\CLCheckBox.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\ComboBox.qml">
+    <None Include="thirdparty\colibri\CLComboBox.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\ContextMenu.qml">
+    <None Include="thirdparty\colibri\CLDatePicker.qml">
       <Filter>Resource Files</Filter>
     </None>
-    <CustomBuild Include="Controls.qrc">
+    <None Include="thirdparty\colibri\CLDial.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLHistogram.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLKeyboard.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLLayer.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLLineEdit.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLListbox.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLProgressBar.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLRating.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLScrollBar.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLScrollBarVertical.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLSlider.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLSliderVertical.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLStyle.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLTab.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\CLTextArea.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="views\ChatHistroyView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="views\ChatView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\Fruits.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\gradients\Grey.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\HistogramColumn.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\KeyboardButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\gradients\LightBlue.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="views\LoginView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="views\MainView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\RatingStar.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\gradients\Red.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="views\RichTextBox.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\Screen.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\TestCoverList.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="thirdparty\colibri\includes\TestItemList.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="controls.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <None Include="thirdparty\desktop\components\Dial.qml">
+    <None Include="thirdparty\colibri\javascripts\date.js">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\Dialog.qml">
+    <None Include="thirdparty\colibri\javascripts\datepicker.js">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\Frame.qml">
+    <None Include="thirdparty\colibri\javascripts\functions.js">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\GroupBox.qml">
+    <None Include="images\g50.jpg">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\Label.qml">
+    <None Include="thirdparty\colibri\javascripts\histogram.js">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\MenuItem.qml">
+    <None Include="thirdparty\colibri\javascripts\histogram2.js">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="thirdparty\desktop\components\ProgressBar.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\RadioButton.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\ScrollArea.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\ScrollBar.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\Slider.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\SpinBox.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\SplitterColumn.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\SplitterRow.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\StatusBar.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\Tab.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\TabBar.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\TabFrame.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\TableColumn.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\TableView.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\TextArea.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\TextField.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\ToolBar.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="thirdparty\desktop\components\ToolButton.qml">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="XmppClientModule\view\loginView.qml">
+    <None Include="thirdparty\colibri\javascripts\keyboard.js">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
