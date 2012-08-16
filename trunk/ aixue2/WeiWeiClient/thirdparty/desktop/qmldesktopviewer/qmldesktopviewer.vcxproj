@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F4871BBB-C740-390A-9DE7-8BFCC24F14FC}</ProjectGuid>
+    <ProjectGuid>{FDD5D74C-AAEF-3D4B-9FCA-DAF72A08D1C9}</ProjectGuid>
     <RootNamespace>qmldesktopviewer</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
