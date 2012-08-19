@@ -17,6 +17,7 @@ include(src.pri)
 SOURCES += main.cpp\
         mainwindow.cpp \
     access/xmpp/wwconn.cpp \
+    client/wwapplication.cpp \
     client/weiwei.cpp \
     client/shell.cpp \
     client/loginviewmodel.cpp \
@@ -24,24 +25,33 @@ SOURCES += main.cpp\
     client/viewmodel/mainviewmodel.cpp \
     client/chatwindow.cpp \
     client/viewmodel/chatviewmodel.cpp \
-    access/xmpp/messagesessionmanager.cpp \
     client/wwacount.cpp \
     client/wwglobal.cpp \
-    access/xmpp/wwmessagesession.cpp
+    access/xmpp/wwmessagesession.cpp \
+    access/xmpp/xmppmessagesessionactor.cpp \
+    access/xmpp/xmppsessionactor.cpp \
+    commom/actormanager.cpp \
+    commom/wwmessage.cpp \
+    commom/wwsessionmessage.cpp
 
 HEADERS  += mainwindow.h \
     access/xmpp/wwconn.h \
     client/weiwei.h \
+    client/wwapplication.h \
     client/shell.h \
     client/loginviewmodel.h \
     client/model/mroster.h \
     client/viewmodel/mainviewmodel.h \
     client/chatwindow.h \
     client/viewmodel/chatviewmodel.h \
-    access/xmpp/messagesessionmanager.h \
     client/wwacount.h \
     client/wwglobal.h \
-    access/xmpp/wwmessagesession.h
+    access/xmpp/wwmessagesession.h \
+    access/xmpp/xmppmessagesessionactor.h \
+    access/xmpp/xmppsessionactor.h \
+    commom/actormanager.h \
+    commom/wwmessage.h \
+    commom/wwsessionmessage.h
 
 FORMS    += mainwindow.ui \
     client/weiwei.ui \
@@ -57,6 +67,7 @@ OTHER_FILES += \
     MyQml/RichEditToolButton.qml \
     client/view/LoginView.qml \
     client/view/MainView.qml \
+    commom/WWMessage.txt
 
 
 RESOURCES += \
