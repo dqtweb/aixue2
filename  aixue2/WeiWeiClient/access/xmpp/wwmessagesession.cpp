@@ -8,14 +8,13 @@ WWMessageSession::WWMessageSession(QObject *parent) :
 WWMessageSession::WWMessageSession(MessageSession *messageSession, QObject *parent) :
     QObject(parent)
 {
-    /*messageSession_ = messageSession;
+    messageSession_ = messageSession;
     //j->disposeMessageSession( m_session );
-    m_session = session;
-    m_session->registerMessageHandler(this);
-    m_messageEventFilter = new MessageEventFilter(m_session);
-    m_messageEventFilter->registerMessageEventHandler(this);
-    m_chatStateFilter = new ChatStateFilter(m_session);
-    m_chatStateFilter->registerChatStateHandler(this);*/
+    messageSession_->registerMessageHandler(this);
+    messageEventFilter_ = new MessageEventFilter(messageSession_);
+    messageEventFilter_->registerMessageEventHandler(this);
+    chatStateFilter_ = new ChatStateFilter(messageSession_);
+    chatStateFilter_->registerChatStateHandler(this);
 }
 
 void WWMessageSession::handleMessageEvent(const JID& from, MessageEventType event)

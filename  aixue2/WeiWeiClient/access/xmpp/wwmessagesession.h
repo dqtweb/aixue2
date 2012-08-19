@@ -6,6 +6,9 @@
 #include <messagehandler.h>
 #include <messagesession.h>
 #include <chatstatehandler.h>
+#include <messageeventfilter.h>
+#include <chatstatefilter.h>
+
 using namespace std;
 using namespace gloox;
 
@@ -24,6 +27,9 @@ public slots:
 
 private:
     MessageSession *messageSession_;
+    MessageEventFilter *messageEventFilter_;
+    ChatStateFilter *chatStateFilter_;
+
 };
 
 #endif // WWMESSAGESESSION_H

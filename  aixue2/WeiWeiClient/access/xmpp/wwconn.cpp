@@ -6,6 +6,9 @@ WWConn::WWConn()
 : m_tls( new TLSDefault( this, "", TLSDefault::AnonymousClient ) ),
 rcpt( "hello@weiwei.com" ) {
 
+    WWApplication *app = dynamic_cast<WWApplication*>(QApplication::instance());
+    actorManager_ =  app->GetActorManager();
+
 }
 
 WWConn::~WWConn()
@@ -28,13 +31,19 @@ void WWConn::handleMessageSession( MessageSession *session )
     {
       //printf( "got new session\n");
       // this example can handle only one session. so we get rid of the old session
-      j->disposeMessageSession( m_session );
+
+
+     WWSessionMessage msg(session);
+     actorManager_->SendMessage2Actor(XMPP_MESSAGE_SESSION,msg);
+
+
+      /*j->disposeMessageSession( m_session );
       m_session = session;
       m_session->registerMessageHandler( this );
       m_messageEventFilter = new MessageEventFilter( m_session );
       m_messageEventFilter->registerMessageEventHandler( this );
       m_chatStateFilter = new ChatStateFilter( m_session );
-      m_chatStateFilter->registerChatStateHandler( this );
+      m_chatStateFilter->registerChatStateHandler( this );*/
     }
 void WWConn::doWork()
 {
@@ -137,7 +146,7 @@ void WWConn::handleHandshakeResult( const TLSBase* /*base*/, bool success, CertI
 	}
 }
 
-void WWConn::handleMessage( const Message& msg, MessageSession * session)
+void WWConn::handleMessage(const Message& msg, MessageSession *session)
 {
 	Tag* m = msg.tag();
 	Parser *p = new Parser( this );
