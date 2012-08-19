@@ -1,5 +1,8 @@
 #ifndef WWCONN_H
 #define WWCONN_H
+
+#include <QApplication>
+
 #include <client.h>
 #include <connectionlistener.h>
 #include <presence.h>
@@ -30,10 +33,15 @@
 #include <chatstatefilter.h>
 #include <taghandler.h>
 #include <parser.h>
-
 #include <xhtmlim.h>
+
+#include <commom/actormanager.h>
+#include <client/wwapplication.h>
+#include <client/wwglobal.h>
+
 using namespace std;
 using namespace gloox;
+
 class WWConn : public QThread,MessageSessionHandler,RosterListener,ConnectionListener, LogHandler,
     MessageHandler, TLSHandler,MessageEventHandler,ChatStateHandler,TagHandler
 {
@@ -97,7 +105,7 @@ private:
 	MessageSession *m_session;
     MessageEventFilter *m_messageEventFilter;
     ChatStateFilter *m_chatStateFilter;
-
+    ActorManager *actorManager_;
 signals:
 	void connect();
 	void rosters(QList<QString> *roster);
