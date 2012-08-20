@@ -107,7 +107,7 @@ private:
     ChatStateFilter *m_chatStateFilter;
     ActorManager *actorManager_;
 signals:
-	void connect();
+    void connectXmpp();
 	void rosters(QList<QString> *roster);
 	void disconnect(ConnectionError e);
 	bool tlsConnect( const CertInfo& info );

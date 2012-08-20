@@ -1,7 +1,6 @@
 #include "xmppmessagesessionactor.h"
 
-XmppMessageSessionActor::XmppMessageSessionActor(QObject *parent) :
-    QObject(parent)
+XmppMessageSessionActor::XmppMessageSessionActor()
 {
     //RegisterHandler(this, &XmppMessageSessionActor::RecieveHandler);
     //RegisterHandler(this, &XmppMessageSessionActor::SendHandler);
@@ -21,5 +20,7 @@ void XmppMessageSessionActor::SendHandler(const MessageSession *messageSession, 
 void XmppMessageSessionActor::SessionHandler(const WWSessionMessage &message, const Theron::Address from)
 {
   // const MessageSession *messageSession = message.GetMessageSession();
-   WWMessageSession *wwMessageSession = new WWMessageSession(message.messagesession_);
+  // WWMessageSession *wwMessageSession = new WWMessageSession(message.messagesession_);
 }
+
+const char * XmppMessageSessionActor::s_actor_key = "session_actor";

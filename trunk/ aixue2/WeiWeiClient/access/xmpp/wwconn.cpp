@@ -8,6 +8,7 @@ rcpt( "hello@weiwei.com" ) {
 
     WWApplication *app = dynamic_cast<WWApplication*>(QApplication::instance());
     actorManager_ =  app->GetActorManager();
+    //actorManager_->connect(this,SIGNAL(),SLOT());
 
 }
 
@@ -34,7 +35,7 @@ void WWConn::handleMessageSession( MessageSession *session )
 
 
      WWSessionMessage msg(session);
-     actorManager_->SendMessage2Actor(XMPP_MESSAGE_SESSION,msg);
+     actorManager_->SendSessionMessage2Actor(XmppMessageSessionActor::s_actor_key,msg);
 
 
       /*j->disposeMessageSession( m_session );
@@ -42,7 +43,7 @@ void WWConn::handleMessageSession( MessageSession *session )
       m_session->registerMessageHandler( this );
       m_messageEventFilter = new MessageEventFilter( m_session );
       m_messageEventFilter->registerMessageEventHandler( this );
-      m_chatStateFilter = new ChatStateFilter( m_session );
+      m_chatStateFi lter = new ChatStateFilter( m_session );
       m_chatStateFilter->registerChatStateHandler( this );*/
     }
 void WWConn::doWork()
@@ -57,7 +58,7 @@ void WWConn::doWork()
 	j = new Client( jid, data2);
 	j->registerConnectionListener( this );
 	j->registerStanzaExtension(new XHtmlIM());
-	//j->registerMessageHandler( this );
+    j->registerMessageHandler( this );
 	//j->registerTagHandler(this);
 	j->registerMessageSessionHandler( this, 0 );
 	j->rosterManager()->registerRosterListener( this );
@@ -69,7 +70,7 @@ void WWConn::doWork()
 
 	if(j->connect())
 	{
-		emit connect();
+        emit connectXmpp();
 	}
 
 	//delete j;
@@ -81,7 +82,7 @@ void WWConn::onConnect()
 	m_tls->handshake();
 	xtlsSend();
 	m_send = "";
-	emit connect();
+    emit connectXmpp();
 }
 
 void WWConn::onDisconnect( ConnectionError e )

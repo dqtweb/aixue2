@@ -14,18 +14,16 @@
 
 using namespace gloox;
 
-class XmppMessageSessionActor : public QObject, Theron::Actor
+class XmppMessageSessionActor : public Theron::Actor
 {
-    Q_OBJECT
 public:
-    explicit XmppMessageSessionActor(QObject *parent = 0);
+    XmppMessageSessionActor();
+    static const char *s_actor_key;
 private:
     void RecieveHandler(const MessageSession *message, const Theron::Address from);
     void SendHandler(const MessageSession *message, const Theron::Address from);
     void SessionHandler(const WWSessionMessage &message, const Theron::Address from);
-signals:
-    
-public slots:
+
     
 };
 
