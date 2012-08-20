@@ -9,6 +9,7 @@ using namespace gloox;
 class WWSessionMessage : public WWMessage
 {
 public:
+    WWSessionMessage();
     WWSessionMessage(MessageSession *messagesession);
     inline const MessageSession* const GetMessageSession()
     {

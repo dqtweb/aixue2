@@ -6,15 +6,16 @@ ActorManager::ActorManager(QObject *parent) :
     actorMap_ = new QMap<const char*,Theron::ActorRef*>();
     framework_ = new Theron::Framework();
     receiver_ = new Theron::Receiver();
-    this->RegisterActor<XmppMessageSessionActor>(XMPP_MESSAGE_SESSION);
+    Theron::ActorRef actor(framework_->CreateActor<XmppMessageSessionActor>());
+	this->RegisterActor(&actor,XmppMessageSessionActor::s_actor_key);
 
 }
 
-template <class ActorType>
-void ActorManager::RegisterActor(const char *actorName)
+
+void ActorManager::RegisterActor(Theron::ActorRef *actor, const char *actorName)
 {
-   // Theron::ActorRef actor(framework_->CreateActor<ActorType>());
-    //actorMap_->insert(actorName,&actor);
+
+    actorMap_->insert(actorName,actor);
 }
 
 void ActorManager::UnRegisterActor(Theron::ActorRef *actor)
@@ -24,14 +25,22 @@ void ActorManager::UnRegisterActor(Theron::ActorRef *actor)
 
  Theron::ActorRef* ActorManager::GetActor(const char *actorName)
  {
-     return actorMap_->value(actorName);
+
+     if (actorMap_->contains(actorName)) {
+         return actorMap_->value(actorName);
+     } else {
+         return NULL;
+     }
+
  }
 
 
- void ActorManager::SendMessage2Actor(const char *actorName, const WWMessage &wwMessage)
+ void ActorManager::SendMessage2Actor(const char *actorName, WWMessage &wwMessage)
  {
     Theron::ActorRef* actor = ActorManager::GetActor(actorName);
+    //WWSessionMessage mm =  (WWSessionMessage)(*wwMessage);
     if (actor != NULL) {
-        actor->Push(wwMessage,receiver_->GetAddress());
+        framework_->Send(wwMessage,actor->GetAddress(),receiver_->GetAddress());
+        //actor->Push(wwMessage,receiver_->GetAddress());
     }
  }

@@ -4,3 +4,8 @@ WWSessionMessage::WWSessionMessage(MessageSession *messagesession)
 {
     messagesession_ =  messagesession;
 }
+
+WWSessionMessage::WWSessionMessage()
+{
+
+}

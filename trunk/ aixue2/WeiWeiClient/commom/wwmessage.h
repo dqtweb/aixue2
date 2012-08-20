@@ -5,6 +5,7 @@ class WWMessage
 {
 public:
     WWMessage();
+   
 };
 
 #endif // WWMESSAGE_H
