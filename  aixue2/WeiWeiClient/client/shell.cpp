@@ -11,7 +11,7 @@ ui(new Ui::Shell)
 	this->setMinimumSize(260,570);
 	this->resize(260,570);
 	//conn->start();
-	connect(conn, SIGNAL(connect()), this, SLOT(connectXmpp()));
+    connect(conn, SIGNAL(connectXmpp()), this, SLOT(connectXmpp()));
 	connect(conn, SIGNAL(rosters(QList<QString> *)), this, SLOT(rosters(QList<QString> *)));
 	//connect(conn, SIGNAL(disconnect(ConnectionError)), this, SLOT(disconnectXmpp(ConnectionError)));
 	//connect(conn, SIGNAL(tlsConnect( const CertInfo&)), this, SLOT(tlsConnect( const CertInfo&)));
@@ -31,6 +31,7 @@ Shell::~Shell()
 {
 	delete ui;
 }
+
 void Shell::connectXmpp()
 {
     QList<QObject*> dataList=*(mainViewModel->RosterList);
@@ -41,15 +42,18 @@ void Shell::connectXmpp()
 	mainView->setResizeMode(QDeclarativeView::SizeRootObjectToView);
 	ui->verticalLayout->addWidget(mainView);
 }
+
 void Shell::disconnectXmpp(ConnectionError e)
 {
 }
 
-void Shell::tlsConnect( const CertInfo& info )
+
+void Shell::tlsConnect(const CertInfo& info)
 {
 
 
 }
+
 void Shell::rosters(QList<QString> *rosters)
 {
 	QList<QObject*> *dataList=new QList<QObject*>();
@@ -64,5 +68,4 @@ void Shell::rosters(QList<QString> *rosters)
     mainViewModel->conn=conn;
     mainView->rootContext()->setContextProperty("rosterModel",QVariant::fromValue(*dataList));
 	mainView->rootContext()->setContextProperty("mainViewModel",mainViewModel);
-
 }
